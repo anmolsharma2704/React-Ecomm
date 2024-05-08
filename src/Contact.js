@@ -33,7 +33,55 @@ const Contact = () => {
     }
   `;
 
-  return <Wrapper></Wrapper>;
+  return (
+    <Wrapper>
+       <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3619.3181919152435!2d74.61523307358287!3d24.887125844193342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDUzJzEzLjYiTiA3NMKwMzcnMDQuMSJF!5e0!3m2!1sen!2sin!4v1715069793806!5m2!1sen!2sin"
+        width="100%"
+        height="350"
+        style={{border:0}}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+      
+      <div className="container">
+        <div className="contact-form">
+          <form
+            action="https://formspree.io/f/xwkgyjql"
+            method="POST"
+            className="contact-inputs">
+            <input
+              type="text"
+              placeholder="username"
+              name="username"
+              required
+              autoComplete="off"
+            />
+
+            <input
+              type="email"
+              name="Email"
+              placeholder="Email"
+              autoComplete="off"
+              required
+            />
+
+            <textarea
+              name="Message"
+              cols="30"
+              rows="10"
+              required
+              autoComplete="off"
+              placeholder="Enter you message"></textarea>
+
+            <input type="submit" value="send" />
+          </form>
+        </div>
+      </div>
+     
+    </Wrapper>
+  );
 };
 
 export default Contact;

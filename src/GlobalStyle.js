@@ -85,7 +85,7 @@ li {
 ${"" /* resuable code section  */}
 
 .container {
-  max-width: 120rem;
+  max-width: 100rem;
   margin: 0 auto;
 }
 
@@ -157,7 +157,7 @@ input, textarea{
     cursor: pointer;
     }
 
-${'' /* @media (max-width: ${({ theme }) => theme.media.tab}) {
+@media (max-width: ${({ theme }) => theme.media.tab}) {
     .container {
     max-width: 130rem;
     padding: 0 3.2rem;
@@ -175,6 +175,6 @@ ${'' /* @media (max-width: ${({ theme }) => theme.media.tab}) {
       .grid-two-column , .grid-three-column, .grid-four-column{
           grid-template-columns: 1fr;
         }
-    } */}
+    }
 
 `;
