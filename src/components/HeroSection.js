@@ -13,7 +13,12 @@ const HeroSection = ({ myData }) => {
             <p className="intro-data">Welcome to </p>
             <h1> {name} </h1>
             <p>
-            Discover endless possibilities at Anmol Mart, your ultimate online shopping destination. Explore a diverse range of products, from trendy fashion to cutting-edge electronics. With unbeatable prices and convenient delivery, Anmol Mart is where your shopping dreams come true. Shop now and experience the joy of seamless online shopping!
+              Discover endless possibilities at Anmol Mart, your ultimate online
+              shopping destination. Explore a diverse range of products, from
+              trendy fashion to cutting-edge electronics. With unbeatable prices
+              and convenient delivery, Anmol Mart is where your shopping dreams
+              come true. Shop now and experience the joy of seamless online
+              shopping!
             </p>
             <NavLink to="/products">
               <Button>show now</Button>
@@ -22,11 +27,7 @@ const HeroSection = ({ myData }) => {
           {/* our homepage image  */}
           <div className="hero-section-image">
             <figure>
-              <img
-                src="images/hero.jpg"
-                alt="hero-section-photo"
-                className="img-style"
-              />
+              <img src="images/hero.jpg" alt="" className="img-style" />
             </figure>
           </div>
         </div>
